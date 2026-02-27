@@ -1,0 +1,109 @@
+.team-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: Arial;
+ 
+}
+
+
+.sction span {
+  background: #B9FF66;
+  padding: 6px 12px;
+  border-radius: 5px;
+  
+ 
+}
+.section-p {
+  margin: 10px 0 30px;
+  font-size: 14px;
+  color: #555;
+}
+.h{
+    color: black;
+}
+.spr{
+  width: 80%;
+  height: 400px;
+  border-radius: 50px;
+  background-color: black;
+}
+
+.staff_card{
+    width: 100%;
+    /* margin: 90px; */
+    color: white;
+    border: 2px solid #41502f;
+    border-radius: 40px;
+    margin-top: 70px;
+}
+.staff_card p{
+  /* margin-top: 30px; */
+  text-align: center;
+  /* width: 90%; */
+  padding: 30px 40px 40px 20px;
+}
+
+/* .staff_card img{
+    width: 100%;
+} */
+
+.staff_details{
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    align-items: center;
+    margin-top: 20px;
+
+}
+.staff_details h3{
+    font-size: 28px;
+    color: #B9FF66;
+
+    
+}
+.staff_details span{
+    /* font-size: 18px; */
+    color: white;
+}
+
+@media (max-width: 1330px){
+    .spr{
+        height: 480px;
+    }
+}
+@media (max-width: 969px){
+    .spr{
+        height: 500px;
+        width: 95%;
+    }
+    
+}
+
+@media (max-width: 789px) {
+    .spr{
+     height: 500px;
+     width: 95%;
+    }
+    .staff_card{
+        width: 92%;
+    }
+}
+/* @media (max-width: 600px) {
+    .spr{
+     height: 500px;
+     width: 95%;
+    }
+} */
+
+@media (max-width: 500px) {
+    .spr{
+     height: 500px;
+     width: 95%;
+    }
+    .staff_card{
+       /* margin: 10px 30px; */
+       width: 90%;
+       /* align-content: center; */
+    }
+}

@@ -1,0 +1,137 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.logo {
+  font-weight: 700;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+  font-weight: 600;
+}
+
+.nav-links li a{
+  padding: 8px 18px;
+  border-radius: 12px;
+  font-size: 19px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  color: #191A23;
+}
+
+.nav-links li a:hover {
+  border: 1px solid #111;
+  background-color: #F3F3F3;
+  transform: translateY(-2px);
+}
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #111;
+  transition: 0.3s;
+}
+
+/* Animation */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(13px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-46deg) translateY(-12px);
+}
+
+
+
+@media (max-width: 992px) {
+
+  .navbar {
+    padding: 20px 20px;
+   
+  }
+  .logo{
+    /* text-align: center;
+    align-content: center; */
+    /* margin-left: 200px; */
+  }
+
+  .nav-links {
+    gap: 40px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links a{
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 30px 0;
+    display: none;
+    /* text-align: center; */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+  .nav-links li a:hover {
+  border: 1px solid #111;
+  background-color: #F3F3F3;
+  transform: translateY(-2px);
+}
+
+}
+@media (max-width: 420px){
+      .logo{
+         /* width: 20%; */
+      }
+      .nav-links li a:hover {
+  border: 1px solid #111;
+  background-color: #F3F3F3;
+  transform: translateY(-2px);
+}
+}

@@ -1,0 +1,129 @@
+.team-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: Arial;
+}
+
+.sction span {
+  background: #B9FF66;
+  padding: 6px 12px;
+  border-radius: 5px;
+  
+  /* margin-top: 50px; */
+}
+
+.section-p {
+  margin: 10px 0 30px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Team  */
+
+.team-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  /* width: 100%; */
+  /* max-height: 400px; */
+}
+
+.cardd {
+  background: #f3f3f3;
+  padding: 20px;
+  border-radius: 50px;
+  /* gap: 50px; */
+  /* text-align: center; */
+  border: 2px solid black;
+  box-shadow: 0px 2px 0  black;
+}
+
+.cardd img {
+  border-radius: 50%;
+  margin-bottom: 10px; 
+  /* margin-right: 30px; */
+  /* justify-content: space-between; */
+  
+}
+.icnimg{
+        margin: 10px 20px;
+        float: right;
+       
+}
+.cardd h3{
+    text-align: center;
+    /* padding-top: -50px; */
+  
+}
+
+.role {
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+
+
+}
+
+.desc {
+  font-size: 13px;
+  margin-top: 8px;
+  color: #444;
+  text-align: center;
+}
+
+.team-btn {
+  margin-top: 30px;
+  padding: 10px 20px;
+  float: right;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  /* margin-bottom: 70px ; */
+}
+
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+  .team-box {
+    display: flex;             
+    gap: 40px;
+     overflow-x: auto; 
+    padding-bottom: 40px;
+  }
+
+  .cardd {
+    max-width: 350px;          
+    flex: 0 0 auto;             
+  }
+
+  /* .team-box::-webkit-scrollbar {
+    height: 4px;
+    width: 5px;
+  }
+
+  .team-box::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 10px;
+  } */
+}
+
+
+@media (max-width: 600px) {
+
+  .team-box {
+    display: flex;
+    overflow-x: auto;
+    gap: 40px;
+  }
+
+  .cardd {
+    max-width: 250px;
+    flex: 0 0 auto;
+  }
+}
