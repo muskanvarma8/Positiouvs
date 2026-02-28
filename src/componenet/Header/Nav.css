@@ -1,14 +1,14 @@
+
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 100px;
-  position: relative;
+
 }
 
-html {
-  scroll-behavior: smooth;
-}
+
 
 
 .logo {
@@ -31,7 +31,7 @@ html {
   font-weight: 600;
 }
 
-.nav-links li a{
+.nav-links li {
   padding: 8px 18px;
   border-radius: 12px;
   font-size: 19px;
@@ -42,7 +42,7 @@ html {
   color: #191A23;
 }
 
-.nav-links li a:hover {
+.nav-links li:hover {
   border: 1px solid #111;
   background-color: #F3F3F3;
   transform: translateY(-2px);
@@ -126,7 +126,7 @@ html {
 
 }
 @media (max-width: 420px){
-      .logo{
+     .logo{
          /* width: 20%; */
       }
       .nav-links li a:hover {
@@ -134,4 +134,96 @@ html {
   background-color: #F3F3F3;
   transform: translateY(-2px);
 }
+}
+
+
+
+
+/* .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 110px;
+  position: relative;
+  z-index: 100;
+} */
+
+/* .logo {
+  font-size: 28px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+} */
+
+/* .star {
+  margin-right: 8px;
+} */
+
+
+
+
+/* Desktop Links */
+
+
+
+
+
+/* Menu Button Hidden on Desktop */
+.menu-btn {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Full Screen Menu */
+.gsap-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  overflow: hidden;
+  background: #111;
+  color: white;
+  z-index: 200;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.menu-links {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: 28px;
+}
+
+.menu-links div {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu-links div:hover {
+  color: #B9FF66;
+}
+
+/* ✅ MOBILE & TABLET ONLY */
+@media (max-width: 992px) {
+
+  .desktop {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
 }

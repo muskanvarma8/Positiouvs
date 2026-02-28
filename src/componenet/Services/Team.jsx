@@ -14,13 +14,14 @@ function Team() {
     <>
     <div className="team-container" id="about">
 
+<div className="prc-hdr">
       <h2 className="sction">
         <span>Team</span>
       </h2>
       <p className="section-p">
        10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy
       </p>
-
+</div>
       <div className="team-box">
 
         <div className="cardd">

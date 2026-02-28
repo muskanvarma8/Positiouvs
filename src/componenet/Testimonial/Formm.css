@@ -1,6 +1,7 @@
 .contact {
-  padding: 80px 10%;
+  padding: 80px 100px;
   font-family: "Inter", sans-serif;
+  
 }
 
 
@@ -15,18 +16,20 @@
   background: #B9FF66;
   padding: 6px 14px;
   border-radius: 8px;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .prc-hdr p {
   color: #444;
+  padding-top: 10px;
+  text-align: center;
 }
 
 
 .contact-box {
   background: #eaeaea;
   border-radius: 30px;
-  padding: 50px;
+  padding: 50px 0 50px 50px;
   display: flex;
   justify-content: space-between;
   /* position: relative; */
@@ -90,19 +93,16 @@
 .right {
   width: 40%;
   display: flex;
-  justify-content: center;   /* image horizontal center */
-  /* align-items: center;       image vertical center */
-  position: relative;
-  right: -90px;
+  justify-content: end;   
+  /* align-items: center;      */
+ 
 }
 
 .right img {
-  /* width: 420px;               */
-  max-width: 120%;           
-  height: auto;
-  object-fit: contain;
-  position: relative;
-  right: -164px;  
+
+width: 280px;
+height: 480px;
+margin-left: 60px;
 }
 
 

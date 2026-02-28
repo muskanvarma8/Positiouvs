@@ -5,7 +5,10 @@
   font-family: Arial;
  
 }
-
+.sction{
+    display: flex;
+    /* margin-top: 60px ; */
+}
 
 .sction span {
   background: #B9FF66;
@@ -16,17 +19,18 @@
 }
 .section-p {
   margin: 10px 0 30px;
-  font-size: 14px;
+  font-size: 17px;
   color: #555;
 }
 .h{
     color: black;
 }
 .spr{
-  width: 80%;
+  width: 86%;
   height: 400px;
   border-radius: 50px;
   background-color: black;
+ 
 }
 
 .staff_card{

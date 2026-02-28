@@ -15,12 +15,14 @@ const Testimonial = () => {
          {/* TESTIMONIAL  */}
 
        <div className="team-container" id='blog'>
+         <div className="prc-hdr">
       <h2 className="sction">
         <span>Testimonial</span>
       </h2>
       <p className="section-p">
        Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services
       </p>
+      </div>
     </div>
 
        <Swiper  className='spr'

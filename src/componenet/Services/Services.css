@@ -2,8 +2,12 @@
 
 .services-section {
   padding: 80px 10%;
+  /* width: 100%; */
   /* background: #f5f5f5; */
   font-family: 'Inter', sans-serif;
+   /* overflow-y: hidden; */
+  
+    /* overflow: hidden; */
 }
 
 .services-header {
@@ -18,7 +22,7 @@
 }
 
 .services-header p {
-  max-width: 500px;
+  /* max-width: 500px; */
   color: #444;
 }
 
@@ -36,8 +40,13 @@
 
 .services {
   display: grid;
+  /* display: flex; */
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
+  
+  
+   /* overflow: hidden; */
+   
 }
 
 .service-card {
@@ -50,6 +59,8 @@
   flex-direction: column;
   justify-content: space-between;
   transition: 0.3s ease;
+   width: 100%;
+   overflow: hidden;
 }
 
 .service-card:hover {
@@ -61,13 +72,18 @@
   line-height: 28px;
     background: #F3F3F3;
     justify-content: space-between;
-    /* position: relative; */
+    position: relative;
 }
 .cd-img img{
     float: right;
     margin-top: -80px;
-    /* position: absolute; */
+    overflow: hidden;
+    position: relative;
 }
+
+
+
+
 
 .service-card.green {
   background: #B9FF66;
@@ -83,10 +99,17 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
 }
-
+.service-card.light .learn{
+  color: #000;
+  font-weight: 500;
+}
+.service-card.service-card.green .learn{
+  color: #000;
+  font-weight: 500;
+}
 
 /* .white-text {
   color: white;
@@ -112,6 +135,11 @@
   background: #F3F3F3;
   color: #000;
 }
+
+
+/* .cta-right{
+  float: right;
+} */
 
 /* Responsive */
 
@@ -162,7 +190,7 @@
 }
 
 .cta-left {
-  max-width: 500px;
+  /* max-width: 500px; */
 }
 
 .cta-left h2 {
@@ -174,6 +202,7 @@
   color: #555;
   margin-bottom: 25px;
   line-height: 1.6;
+  width: 80%;
 }
 
 .cta-btn {
@@ -193,9 +222,9 @@
 
 
 .cta-right {
- width: 350px;
+ width: 300px;
  height: 200px;
- margin-left: 90px;
+ /* margin-left: 90px; */
  /* background-color: #555; */
 }
 .cta-right img{
@@ -233,7 +262,7 @@
 .case-card {
   background: #111827;
   color: white;
-  padding: 80px;
+  padding: 80px 30px;
   border-radius: 30px;
   display: flex;
   justify-content: space-between;
@@ -297,7 +326,7 @@
 @media (max-width: 600px) {
 
   .case {
-    padding: 0px 20px;
+    padding: 0px 0px;
   }
 
   .cta-left h2 {
@@ -307,4 +336,16 @@
   .case-card {
     padding: 30px;
   }
+
+  
+}
+
+@media (max-width: 500px){
+.cd-img img{
+    float: right;
+    /* margin-top: -80px; */
+    margin-right: -20px;
+    overflow: hidden;
+    /* position: relative; */
+}
 }
