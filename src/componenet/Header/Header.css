@@ -134,7 +134,7 @@
   .brnd {
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    padding: 30px 30px;
+    padding: 0px 30px;
   }
   .brnd .brnd-box img{
         width: 83%;
@@ -150,10 +150,10 @@
   }
 
   .brnd {
-     grid-template-columns: repeat(2, 1fr);
+     grid-template-columns: repeat(3, 1fr);
     /* padding: 10px 120px; */
   }
-   .brnd-box img{
-        width: 85%;
+   .brnd.brnd-box img{
+        /* width: 86%; */
   }
 }
